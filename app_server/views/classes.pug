@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    p You are in the page of the Classes !
+block content1
+    table(class="table table-dark" style="margin-top:3rem")
+        thead
+            tr
+            th(scope="col") Class
+            th(scope="col") Description
+        tbody
+            each classe in classes
+                tr(style='border-bottom:1px solid')
+                    td= classe.class
+                    td=classe.description

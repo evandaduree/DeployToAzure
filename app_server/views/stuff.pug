@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    p You are in the page of the Stuff !
+block content1
+    h4 In Guild Wars the Stuff have an important place ! This is why it's important to pay attention to it !
+    p.
+        Soon a table of the stuff will be set-up (#HaveToWaitForTheDB)
+
+    ul
+        each stuff in equipments
+            li= stuff
